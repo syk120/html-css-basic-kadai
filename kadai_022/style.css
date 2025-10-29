@@ -24,8 +24,8 @@ main{
 
 #parent{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .contents{
@@ -49,14 +49,14 @@ h2::before{
 
 }
 
-div p:nth-of-type(2)::first-letter{
+.contents p:nth-of-type(2)::first-letter{
     font-weight: bold;
     color: rgb(97, 206, 249);
 }
 
-div img:nth-child(4){
-    margin: 10px 0;
-    width: 70%;
+.contents img {
+  margin: 10px 0;
+  width: 70%;
 }
 
 footer{
@@ -85,6 +85,6 @@ a:hover{
         font-size: 25px;
     }
     #parent{
-    display: block;
+    flex-direction: column; 
     }
 }
